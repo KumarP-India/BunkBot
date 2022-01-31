@@ -66,7 +66,7 @@ You can specify the the Startring period and Status. For more info. run the Help
 
 Step 1: Open the Terminal(Comand Prompt) or CMD
 
-Step 2: excute> cd <location to Pprogram Files folder>
+Step 2: excute> cd "location to Pprogram Files folder"
 
 Step 3: excute> python BunkBot.py --help OR python BunkBot.py -h
 
