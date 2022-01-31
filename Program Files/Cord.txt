@@ -1,0 +1,35 @@
+taskbar = 476, 1079
+
+win = 794, 1048
+
+chrome = 1138, 411
+
+edu = 678, 627
+
+Login = 1336, 719
+
+Dashboard = 1781, 180
+
+E-Connect =  34, 729
+
+Mic = 619, 808
+
+cam = 717, 811
+
+close_tab = 587, 19
+
+refresh = 107, 61
+
+Scroll = 1908, 1037
+
+First perod = 1308, 459
+
+second period = 1308, 674
+
+third period = 1330, 885
+
+fourth period = 1310, 622
+
+fifth period = 1307, 835
+
+Join = 1345, 631
