@@ -1,10 +1,10 @@
-# BunkBot creted by Prabhas Kumar on Fri Jan 11 10:03:00 2022 & Updated on Mon Jan 31 14:00:00 2022
+# BunkBot created by Prabhas Kumar on Fri Jan 11 10:03:00 2022 & Updated on Mon Jan 31 14:00:00 2022
 
 # Setup
 
 
 
-## To Setup excute following comnds to either conda connected cmd prompt or directly in conda prompt:
+## To Setup excute following comands to either conda connected cmd prompt or directly in conda prompt:
 
 
 C:\Users\YourName> conda activate
