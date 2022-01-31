@@ -77,7 +77,7 @@ Step 3: excute> python BunkBot.py --help OR python BunkBot.py -h
 
 Step 1: Open the Terminal(Comand Prompt) or CMD
 
-Step 2: excute> cd <location to Pprogram Files folder>
+Step 2: excute> cd "location to Pprogram Files folder"
 
 Step 3.0: Decide the starting period, let say 3, and status, let say Open. For info run the help section
 
