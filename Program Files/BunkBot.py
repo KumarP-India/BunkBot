@@ -77,6 +77,10 @@ def start(): # OPening the website
 
 def period(n): #Joining the class
 
+    foo = ['First', 'Second', 'Third', 'Fourth', 'Fifth', 'Sixed', 'Sevened', 'Eighth']
+    
+    print(f'Starting the {foo[n-1]} period.')
+
     click('refresh')
     
     if n > 3: click('scroll')
@@ -346,4 +350,3 @@ if __name__ == "__main__":
 The End :)
 '''
     
-
