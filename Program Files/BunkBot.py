@@ -1,7 +1,7 @@
 """
 Created on Fri Jan 11 10:03:00 2022
 
-Updated on Mon Jan 31 14:00:00 2022
+Updated on Wed Feb 02 16:00:00 2022
 
 @author: Prabhas kumar
 """
@@ -122,7 +122,7 @@ def school(p=0, z=0):
     while True:
 
         now = ddtt.datetime.now() #Current time
-
+        
         # x donates the no. of period it has attended.
 
         # y donates wether it is on the class or not (0 = no, 1 = yes)
@@ -273,7 +273,7 @@ class Inputs:
 
         else: z = 0
 
-        return x, z
+        return int(x), int(z)
 
 
 
