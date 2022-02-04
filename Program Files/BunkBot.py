@@ -109,6 +109,7 @@ def close(): #Exiting the class
 
     click('refresh')
 
+
 def close_win(): #Closing the Webbrowser
 
     click('closer')
@@ -242,7 +243,7 @@ class Inputs: # The class for the optional comand prompts' or terminals' Input
             except: # Code to run if error occur.
                 
                 # Printing the message for telling failure of changing the var.
-                print("You have not specified the INtegral Value or the value exceds the no. of periods. Setting the default instead: 0")
+                print("You have not specified the Integral Value or the value exceeds the no. of periods. Setting to the default instead: 0")
 
                 foo = 0 # Defult val.
 
@@ -260,7 +261,7 @@ class Inputs: # The class for the optional comand prompts' or terminals' Input
             except: # Code to run if error occur.
                 
                 # Printing the message for telling failure of changing the var.
-                print("You have not specified the accepted Value. Setting the default instead: Close")
+                print("You have not specified the accepted Value. Setting to the default instead: Close")
 
                 foo = "Close" # Defult val.
 
@@ -282,6 +283,47 @@ class Inputs: # The class for the optional comand prompts' or terminals' Input
 
 
         return int(x), int(z) # Returniing the values
+
+
+
+
+def end(foo, stat): # Func. for Ending & Closing Program
+
+    if stat: # If it's been not ran before, ie. requested KeyboardInterrupt
+
+        if not foo: # If it's a KeyboardInterrupt request
+        
+            print('The Program is requested to close!\n') # Ending Statement!
+
+            while True: # Final Confirmation Loop.
+
+                end = input("Close the program? [Y]es [n]o: ").lower() # Question
+
+                if end == 'n': sleep(3); print() # If ans. is no, wait 3 sec. and re-ask the question
+
+                elif end == 'y': break # Else, if asn. is yes, exit the loop.
+
+                else: sleep(1)
+
+            sleep(2) # Wait 2 sec. to prppoerly clear the background low level files.
+
+            return False # Stat
+
+        elif foo:  # If it's an end!
+                
+            print('Thanks for using the Program!\n') # Ending Statement!
+
+            while True: # Final Confirmation Loop.
+
+                end = input("Close the program? [Y]es [n]o: ").lower() # Question
+
+                if end == 'n': sleep(3); print() # If ans. is no, wait 3 sec. and re-ask the question
+
+                elif end == 'y': break # Else, if asn. is yes, exit the loop.
+
+                else: sleep(1)
+
+            sleep(2) # Wait 2 sec. to prppoerly clear the background low level files.
 
 
 
@@ -316,6 +358,8 @@ if __name__ == "__main__":
 
     p, z = INPUt.args() # Calling the func to get the values from Inputs class
 
+    nd = True
+
     #print(p, z)
     
     #p, z = 0, 0
@@ -336,23 +380,11 @@ if __name__ == "__main__":
 
     #bar._stop()
 
-    school(p, z) # Calling the main program with the input values.
+    try: school(p, z) # Calling the main program with the input values.
 
+    except KeyboardInterrupt: nd = end(False, nd)
 
-    print('Thanks for using the Program!\n') # Ending Statement!
-
-    while True: # Final Confirmation Loop.
-
-        end = input("Close the progrma? [Y]es [n]o: ").lower() # Question
-
-        if end == 'n': sleep(3); print() # If ans. is no, wait 3 sec. and re-ask the question
-
-        elif end == 'y': break # Else, if asn. is yes, exit the loop.
-
-        else: sleep(1)
-
-    sleep(2) # Wait 2 sec. to prppoerly clear the background low level files.
-
+    end(True, nd)
 
 '''
 The End :)
